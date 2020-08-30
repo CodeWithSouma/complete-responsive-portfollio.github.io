@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #222831;
+  font-family: "Rubik", sans-serif;
+  color: #a5b2c5;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.navbar{
+    background-color: #2d3541;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: rgb(65, 72, 80);
+
+}
+
+.btn{
+    border-radius: 20px;
+}
+
+#title{
+    margin-top:140px ;
+}
+
+#title .title{
+    color: #a5b2c5;
+    font-size: 5em;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+#title .description{
+    color: rgb(114, 126, 139);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#about .container{
+    margin-top: 4%;
+}
+
+.about-img{
+    height: 100px;
+}
+
+.profile-img {
+  height: 100px;
+}
+.social-icon {
+  padding: 5px;
+  margin-bottom:15px;
+  
+}
+.social-icon a {
+    color: #6f7886;
+    margin: auto 10px;
+}
+.social-icon a:hover {
+  color: rgb(255, 255, 255);
+}
+.container {
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.about-img {
+  color: #fff;
+  background: linear-gradient(-45deg,#df9e1d 49%,#eea921 50%);
+  font-size: 45px;
+  line-height: 92px;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  border: 15px solid #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  margin: 20px;
+  
+}
+
+
+.round-container {
+  background: #2d3541;
+  box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  border-radius: 30px;
+  border: 2px solid #eea921;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 30px;
+  
+}
+
+
+.fact-section {
+  margin-top: 80px;
+}
+
+.fact {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+.fact i:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* =============progress bar================ */
+.demo{ background: #2c304a; }
+.progress-title{
+font-size: 18px;
+font-weight: 700;
+color: #fff;
+margin: 0 0 20px;
+}
+.progress{
+height: 20px;
+background: #171b3c;
+border-radius: 20px;
+border: 1px solid #000;
+box-shadow: 0 2px 2px #4f4c4c;
+margin-bottom: 40px;
+overflow: visible;
+position: relative;
+}
+.progress .progress-bar{
+border-radius: 20px;
+border:  1px solid #000;
+-webkit-animation: animate-positive 2s;
+animation: animate-positive 2s;
+}
+.progress .progress-value{
+width: 65px;
+height: 25px;
+line-height: 25px;
+background: #171b3c;
+font-size: 15px;
+color: #fff;
+border-radius: 0 0 15px 15px;
+border: 1px solid #000;
+border-top: none;
+box-shadow: 0 2px 2px #4f4c4c;
+position: absolute;
+bottom: -25px;
+right: 60px;
+}
+@-webkit-keyframes animate-positive{
+0% { width: 0; }
+}
+@keyframes animate-positive{
+0% { width: 0; }
+}
+/* ====================Service Box============================= */
+.serviceBox{
+    /* background: #fff; */
+    background: #2d3541;
+    text-align: center;
+    padding: 0px 25px 40px;
+    margin: 40px 0 0;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+    }
+    .serviceBox:hover{ box-shadow: 0 10px 10px rgba(0,0,0,0.2); }
+    .serviceBox:before,
+    .serviceBox:after{
+    content: "";
+    background: linear-gradient(to top,#008d86,#01a2a6);
+    width: 10px;
+    border-radius: 0 100px 100px 0;
+    position: absolute;
+    /* top: 110px; */
+    top: 100px;
+    /* bottom: 35px; */
+    bottom: 60px;
+    left: 0;
+    }
+    .serviceBox:after{
+    border-radius: 100px 0 0 100px;
+    left: auto;
+    right: 0;
+    }
+    .serviceBox .service-icon{
+    color: #fff;
+    background: linear-gradient(-45deg,#008d86 49%,#01a2a6 50%);
+    font-size: 45px;
+    line-height: 92px;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 100px;
+    border: 15px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+    }
+  
+    .serviceBox:hover .service-icon i{
+    transform: rotateX(360deg);
+    transition: all 0.3s;
+    }
+    .serviceBox .title{
+    color: #008d86;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    }
+    .serviceBox .description{
+    /* color: #444; */
+    color: #a5b2c5;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    }
+    .serviceBox.pink:before,
+    .serviceBox.pink:after{ background: linear-gradient(to top,#f53985 49%,#fd47a4); }
+    .serviceBox.pink .service-icon{ background:linear-gradient(-45deg,#f53985 49%,#fd47a4 50%); }
+    .serviceBox.pink .title{ color: #f53985; }
+    .serviceBox.purple:before,
+    .serviceBox.purple:after{ background: linear-gradient(to top,#8b33cc 49%,#a23adc); }
+    .serviceBox.purple .service-icon{ background:linear-gradient(-45deg,#8b33cc 49%,#a23adc 50%); }
+    .serviceBox.purple .title{ color: #8b33cc; }
+    .serviceBox.blue:before,
+    .serviceBox.blue:after{ background: linear-gradient(to top,#038bec 49%,#01aeee); }
+    .serviceBox.blue .service-icon{ background:linear-gradient(-45deg,#038bec 49%,#01aeee 50%); }
+    .serviceBox.blue .title{ color: #038bec; }
+    @media only screen and (max-width:990px){
+        .serviceBox{ margin: 20px 0 50px; }
+    }
+/* ============================service======================================= */
+#service .container{
+    margin-bottom: 0px;
+}
+/* ===============================Skill=========================== */
+.main-container{
+    padding: 30px;
+
+}
+
+/* ===================================work======================= */
+.portfollio-img{
+    width: 100%;
+    margin:0 auto;
+    display: block;
+    border: #2d3541 10px solid;
+    /* border-radius: 15px; */
+}
+.portfollio-img:hover{
+    /* filter: drop-shadow(0 0 0.2rem #fff); */
+    /* background-color: slateblue; */
+    border: #ffffff 10px solid;
+}
+/* ===================================footer====================== */
+footer{
+    text-align: center;
+    background-color: #2d3541;
+}
+footer .social-icon{
+    margin:0 auto;
+}
+
+/* ======================break point======================= */
+@media (max-width: 1028px) {
+
+    #title .title {
+      font-size: 4rem; 
+    }
+
+    #title .description{
+        font-size: 1rem;
+    }
+  
+}
+@media (max-width: 480px) {
+
+    #title .title{
+      font-size: 2rem;
+    }
+    #title .description{
+        font-size: 1rem;
+    }
+}
